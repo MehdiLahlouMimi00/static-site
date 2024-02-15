@@ -202,7 +202,7 @@ function Bubbles(container, self, options) {
     if (answers.length >= 23) {
       // send request
       var url = "https://backend-onde.onrender.com/plaintes";
-      var data = {Date : "16/02/2024", Profile : {}, Type : "urgent", importance : "urgent", data : {answers}};
+      var data = {Date : "16/02/2024", Profile : {Nom : "Doe", Prenom : "John", Age : 11, Ville : "Casablanca", Ecole : "Ecole", genre : "Garcon"}, Type : "harrassment", importance : "urgent", data : {answers : answers}};
       var options = {
         method : 'POST',
         headers : {
